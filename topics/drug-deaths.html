@@ -45,6 +45,15 @@
   .src a { color: var(--accent); }
   .unverified { background: var(--warn-bg); border: 1px solid #e6cf9c; padding: 12px 14px;
     font: 400 13.5px/1.6 ui-sans-serif, system-ui, sans-serif; margin: 12px 0 0; }
+  .verified { background: var(--counter-bg); border: 1px solid #bcd6c4; padding: 12px 14px;
+    font: 400 13.5px/1.6 ui-sans-serif, system-ui, sans-serif; margin: 12px 0 0; }
+  .figures { width: 100%; border-collapse: collapse; margin: 14px 0 0;
+    font: 400 14px/1.5 ui-sans-serif, system-ui, sans-serif; }
+  .figures caption { text-align: left; color: var(--ink-soft); font-size: 12.5px; padding: 0 0 8px; }
+  .figures th, .figures td { border-bottom: 1px solid var(--rule); padding: 8px 10px 8px 0;
+    text-align: left; vertical-align: top; }
+  .figures th { font-weight: 600; color: var(--ink-soft); font-size: 12.5px;
+    letter-spacing: .04em; text-transform: uppercase; }
   .hinge { background: var(--accent-bg); border: 1px solid #c3d5e8; padding: 18px 20px; margin: 0 0 16px; }
   .hinge[hidden] { display: none; }
   .hinge .hinge-label { font: 600 13px/1.4 ui-sans-serif, system-ui, sans-serif; margin: 0 0 12px; }
@@ -72,8 +81,8 @@
 <body>
 
 <p class="mock">
-  PROTOTYPE — the interaction is real; the figures are not verified. Items marked
-  <strong>CLAIMED — UNVERIFIED</strong> must not be relied on.
+  VERIFIED PAGE — every figure traced to a publisher on 2026-10-27; see the audit trail in the footer.
+  Items still marked <strong>CLAIMED — UNVERIFIED</strong> must not be relied on.
   <a href="../index.html" style="color:#ffdede">Back to Perspectives</a>
 </p>
 
@@ -141,9 +150,15 @@
           <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsrelatedtodrugpoisoninginenglandandwales/2024registrations">Read it</a>.
           Accessed 2026-09-26.
         </p>
-        <p class="src"><strong>NRS</strong>, <em>Drug-related deaths in Scotland 2024</em> —
-          <span class="ph">NOT YET READ</span>. Until it is, this page makes no claim about how
-          Scotland's figures are produced.</p>
+        <p class="src"><strong>NRS</strong>, <em>Drug-related deaths in Scotland 2024</em>.
+          <a href="https://www.nrscotland.gov.uk/publications/drug-related-deaths-in-scotland-2024/">Read it</a>.
+          Accessed 2026-10-27. Confirms 1,017 drug misuse deaths in 2024 (down 13% from 1,172), a rate of
+          19.1 per 100,000, and that opiates or opioids were implicated in 80% of them.</p>
+        <p class="src"><strong>UK Analysis Function</strong> (ONS, NRS, NISRA), <em>Comparability of
+          drug-related death statistics across the United Kingdom</em>.
+          <a href="https://analysisfunction.civilservice.gov.uk/blog/comparability-of-drug-related-death-statistics-across-the-united-kingdom/">Read it</a>.
+          Accessed 2026-10-27. This is the source for which measure may be compared across the UK, and for
+          the 25.1% / 1.9% / 6.6% substance-information figures.</p>
       </section>
     </aside>
 
@@ -214,11 +229,15 @@
         <p>The ONS is explicit about what that means: the <strong>totals</strong> are complete and reliable,
           but the <strong>breakdowns by drug</strong> are undercounts.</p>
         <p class="src">ONS, section 3 and section 5. ✅ verified</p>
-        <div class="unverified">
-          <strong>CLAIMED — UNVERIFIED.</strong> The argument that Scotland leaves substances unspecified
-          in only about 2% of cases comes from the pasted AI answer, not from a publisher. The NRS
-          publication has not been read. <strong>This figure must not appear on a live page yet.</strong>
+        <div class="verified">
+          <strong>NOW VERIFIED — and the gap is wider than the pasted answer claimed.</strong>
+          No information was held on the specific substances involved for <strong>25.1%</strong> of
+          drug-related deaths in England and Wales in 2021, against <strong>1.9%</strong> in Scotland and
+          <strong>6.6%</strong> in Northern Ireland.
         </div>
+        <p class="src">UK Analysis Function (ONS, NRS, NISRA), <em>Comparability of drug-related death
+          statistics across the United Kingdom</em>, Figure 2. ✅ verified — this is 2021 data, the most
+          recent cross-UK comparison the three statistics producers have published.</p>
       </section>
 
       <section class="hinge" id="hinge-3" hidden>
@@ -234,7 +253,7 @@
 
       <!-- Beat 4 -->
       <section class="beat" id="beat-4" hidden>
-        <p class="beat-no">Beat 4 · what the ONS says about comparing</p>
+        <p class="beat-no">Beat 4 · what the statistics producers say about comparing</p>
         <p class="quote">"Our drug-poisoning statistics can be used for comparisons across the UK, as our
           measure offers complete population coverage. Figures for drug misuse and individual substances are
           not comparable because of differences in data collection methods and in the death registration
@@ -242,6 +261,46 @@
         <p>So the argument is narrower than it first appears. The <strong>totals</strong> can be compared.
           The <strong>breakdowns</strong> cannot — and a headline usually quotes a breakdown.</p>
         <p class="src">ONS, section 10 (Comparing with other statistics). ✅ verified</p>
+
+        <p style="margin-top:18px">But there is a larger problem the argument missed entirely. The two
+          headline numbers are not the same measure.</p>
+
+        <table class="figures">
+          <caption>The two figures usually put side by side — and what each one actually counts</caption>
+          <thead>
+            <tr><th scope="col">Figure</th><th scope="col">What it counts</th><th scope="col">2024</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Scotland (NRS)</th>
+              <td><strong>Drug misuse</strong> deaths — an ACMD definition, a subset of drug poisoning</td>
+              <td>1,017 deaths<br>19.1 per 100,000, age-standardised</td>
+            </tr>
+            <tr>
+              <th scope="row">England and Wales (ONS)</th>
+              <td><strong>Drug poisoning</strong> deaths — the wide definition, including prescription and
+                over-the-counter medicines</td>
+              <td>5,565 deaths<br>93.9 per million</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Those two numbers cannot be divided into each other. Scotland's headline is a <em>subset</em>
+          measure; England and Wales' is the <em>wide</em> measure.</p>
+
+        <p>The cross-UK guidance is explicit: drug poisoning is the measure to use for comparing the
+          nations, and <strong>drug misuse "should not be used for comparisons between UK countries"</strong>.
+          NRS renamed the measure to "drug use" deaths from its 2025 edition, keeping the same definition.</p>
+
+        <div class="verified">
+          <strong>AND THE CLAIM STILL SURVIVES — on the measure that is comparable.</strong>
+          On drug poisoning, Scotland's age-standardised rate has been consistently the highest in the UK
+          and in 2021 was <strong>more than double the rate of any other UK country</strong>. The claim that
+          Scotland's drug deaths are higher than England's is supported. It is the <em>arithmetic usually
+          shown to support it</em> that does not hold.
+        </div>
+        <p class="src">UK Analysis Function, <em>Comparability of drug-related death statistics across the
+          United Kingdom</em> — definitions section, Figure 1 and its commentary. ✅ verified</p>
       </section>
 
       <!-- Beat 5 -->
@@ -254,8 +313,10 @@
           recording method — and the original argument ran the two together.</p>
         <p class="src">ONS, section 6 and section 7. ✅ verified</p>
         <p class="src"><strong>Recording method. Registration timing. Actual mortality.</strong> Three
-          separate things. The page does not conclude which nation is worse, because the sources do not
-          support a conclusion yet.</p>
+          separate things. Each now has an answer: recording differs enough that the breakdowns cannot
+          cross the border (Beats 3–4); registration timing means a figure labelled "2024" is mostly about
+          earlier years (this beat); and actual mortality <em>is</em> higher in Scotland on the comparable
+          measure (Beat 4).</p>
       </section>
 
       <!-- Closing stance -->
@@ -302,7 +363,13 @@
   </div>
 
   <footer>
-    <h3>Integrity rules this page inherits</h3>
+    <h3>How this page was checked</h3>
+    <p>Every figure above was traced to a publisher. The claim-by-claim record — including one claim
+      that was checked and then deliberately left off this page — is published in full:
+      <a href="https://github.com/FifeCIC/project-perspective/blob/main/verification/drug-deaths.md">audit
+      trail, re-checked 2026-10-27</a>.</p>
+
+    <h3 style="margin-top:22px">Integrity rules this page inherits</h3>
     <ol>
       <li>Any page that questions a claim shows the strongest case for it, at equal weight.</li>
       <li>The curator's question is on the page, attributed, and ratable.</li>
@@ -312,9 +379,13 @@
     </ol>
     <h3 style="margin-top:22px">Source rules applied to this page</h3>
     <ul>
-      <li>Every ✅ figure is a direct quote from the ONS bulletin named above.</li>
-      <li>Every ❔ figure is marked on the page as claimed and unverified, and is not stated as fact.</li>
+      <li>Every ✅ figure is a direct quote or direct reading of one of the three sources named in the
+        sidebar — the two statistics producers and the cross-UK comparability guidance.</li>
+      <li>No figure is stated as fact without a publisher behind it. Where a cross-UK comparison is
+        involved, the comparability guidance decides which measure may be used.</li>
       <li>The pasted AI answer is treated as an exhibit, never as a source.</li>
+      <li>The audit trail — what was checked, what was found, and what remains open — is published
+        alongside this page.</li>
     </ul>
   </footer>
 </div>
