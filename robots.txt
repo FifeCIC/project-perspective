@@ -1,0 +1,5 @@
+# Persistence
+# Deliberately permissive: pages carry <meta name="robots" content="noindex">
+# so crawlers must be allowed to read them in order to honour that.
+User-agent: *
+Allow: /

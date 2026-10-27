@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perspectives — explore contested issues through structured comparison, source trails, and concrete actions.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0f1720">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Perspectives">
+  <meta property="og:title" content="Perspectives — Prototype Preview">
+  <meta property="og:description" content="A UK-first platform for exploring contested topics through structured comparison, source trails, and meaningful actions.">
+  <title>Perspectives — Prototype Preview</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.add('js-reveal');</script>
+</head>
+<body>
+  <p class="preview-bar">
+    PROTOTYPE PREVIEW — hosted temporarily for iteration. Not a published product.
+    <a href="#status">What is built and what is not</a>
+  </p>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Perspectives</a>
+      <button class="hamburger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#method">Method</a></li>
+        <li><a href="#status">Status</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#topics">Topics</a>
+      <a href="#method">Method</a>
+      <a href="#status">Status</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main-content" tabindex="-1">
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Perspectives · Preview build</p>
+          <h1>Two claims. One issue. Show me the evidence.</h1>
+          <p class="lead">A UK-first platform for exploring contested topics through structured comparison, visible source trails, and concrete next actions.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#topics">Explore topics</a>
+            <a class="btn btn-outline" href="#method">See methodology</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>Format under test</h2>
+          <ul>
+            <li>Split-claim opening</li>
+            <li>Spectrum slider outcomes</li>
+            <li>Actor stance timeline</li>
+            <li>Action hub with effort labels</li>
+            <li>Source tier + confidence notes</li>
+          </ul>
+          <p>Two of these are working prototypes you can open today.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2>Why this format</h2>
+        <p>Perspectives is designed to provoke thought without sacrificing trust. A visitor should see the opposing claims quickly, be able to check the quality of the evidence behind them, and leave with a concrete next step rather than an opinion they were handed.</p>
+        <p>The unit of the site is not an article. It is a <strong>comparison</strong>: the same issue, the strongest version of each position, and a visible trail back to the source for every number used.</p>
+      </div>
+    </section>
+
+    <section id="topics" class="section section-alt reveal">
+      <div class="container">
+        <h2>Topic builds</h2>
+        <div class="cards-3">
+          <article class="card">
+            <h3>GB News <span class="tag tag-draft">Format demo</span></h3>
+            <p>Compare framing claims, actor stance consistency, and influence pathways using the full topic template.</p>
+            <a href="topics/gb-news.html">Open case study</a>
+          </article>
+          <article class="card">
+            <h3>Drug-death recording <span class="tag tag-draft">Prototype</span></h3>
+            <p>Scotland vs England: what changes when you can see how each number is made. Forensics-style claim trace.</p>
+            <a href="topics/drug-deaths.html">Open prototype</a>
+          </article>
+          <article class="card">
+            <h3>Face Value <span class="tag tag-draft">Prototype</span></h3>
+            <p>Layout prototype for the visual comparison of two readings of the same public figure.</p>
+            <a href="topics/face-value.html">Open prototype</a>
+          </article>
+        </div>
+        <p class="meta-row">Every page above is a working prototype. Figures are marked where they are unverified — see the status section.</p>
+      </div>
+    </section>
+
+    <section id="method" class="section reveal">
+      <div class="container">
+        <h2>Evidence method</h2>
+        <div class="cards-3">
+          <article class="card">
+            <h3>Tier 1</h3>
+            <p>Official datasets, legislative records, peer-reviewed studies. Usable as the spine of a claim.</p>
+          </article>
+          <article class="card">
+            <h3>Tier 2</h3>
+            <p>Reputable media and transparent policy research organisations. Corroborates, does not carry alone.</p>
+          </article>
+          <article class="card">
+            <h3>Tier 3</h3>
+            <p>Expert commentary and public statements. Always carried with a confidence note and a date.</p>
+          </article>
+        </div>
+        <p class="meta-row">Rules that apply on every page: claims are paraphrased and attributed; the strongest counter-case is presented with equal weight and cannot be hidden behind a toggle; a figure without a date is treated as unverified.</p>
+      </div>
+    </section>
+
+    <section id="status" class="section section-alt reveal">
+      <div class="container">
+        <h2>What is built, and what is not</h2>
+        <div class="cards-2">
+          <article class="card">
+            <h3>Working today</h3>
+            <ul class="status-list">
+              <li>This landing page and the site shell</li>
+              <li>GB News topic template — full section flow</li>
+              <li>Drug-death recording prototype — claim trace with an integrity panel</li>
+              <li>Face Value layout prototype</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Not built yet</h3>
+            <ul class="status-list">
+              <li>Verified figures — several are still marked CLAIMED / UNVERIFIED</li>
+              <li>Source library and per-claim citation system</li>
+              <li>Contribution and correction workflow</li>
+              <li>Domain, brand and a permanent home</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2>Contribute to perspective quality</h2>
+        <p>Submit source-backed material, challenge a weak chain, or help balance a topic. The correction route matters as much as the claim route.</p>
+        <a class="btn btn-primary" href="mailto:hello@perspectivehub.uk">Register interest</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Perspectives</h2>
+        <p>Evidence, perspective, and action.</p>
+        <p>Contact: <a href="mailto:hello@perspectivehub.uk">hello@perspectivehub.uk</a></p>
+      </div>
+      <div>
+        <h3>Navigate</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#method">Method</a></li>
+          <li><a href="#status">Status</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Trust</h3>
+        <ul>
+          <li><a href="#method">Methodology</a></li>
+          <li><a href="#contact">Corrections</a></li>
+          <li><a href="#status">Build status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Perspectives · Prototype preview hosted by Fife CIC. No figures on this site should be relied on until marked verified.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

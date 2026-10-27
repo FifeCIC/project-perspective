@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>PT-3 Face Value — mockup (placeholder content)</title>
+<style>
+  :root {
+    --ink: #16181d;
+    --ink-soft: #545a66;
+    --paper: #fbfaf7;
+    --rule: #e2ded4;
+    --accent: #9a6a12;
+    --accent-bg: #fdf6e6;
+    --counter: #1f4d3d;
+    --counter-bg: #f0f5f1;
+    --radius: 3px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif;
+  }
+  .mock-banner {
+    background: #2b1d1d; color: #ffdede;
+    font: 600 13px/1.5 ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: .02em; padding: 10px 18px; text-align: center;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 48px 22px 80px; }
+  .kicker {
+    font: 600 11px/1.4 ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: .13em; text-transform: uppercase;
+    color: var(--ink-soft); margin: 0 0 10px;
+  }
+  h1 { font-size: 2.1rem; line-height: 1.15; margin: 0 0 8px; font-weight: 400; }
+  h2 { font-size: 1.28rem; line-height: 1.35; margin: 0 0 10px; font-weight: 400; }
+  .lede { color: var(--ink-soft); margin: 0 0 34px; }
+  section { border-top: 1px solid var(--rule); padding: 30px 0; }
+  section:first-of-type { border-top: 0; }
+  .claim blockquote {
+    margin: 0 0 12px; font-size: 1.5rem; line-height: 1.4; font-style: italic;
+  }
+  .claim blockquote::before { content: "\201C"; color: var(--ink-soft); }
+  .claim blockquote::after { content: "\201D"; color: var(--ink-soft); }
+  .attrib { font: 400 14px/1.5 ui-sans-serif, system-ui, sans-serif; color: var(--ink-soft); margin: 0; }
+  .ph {
+    background: #fff2cc; border-bottom: 1px dotted #b8870b;
+    font-style: normal; padding: 0 3px; white-space: nowrap;
+  }
+  .question { background: var(--accent-bg); border-left: 3px solid var(--accent); padding: 26px 24px; border-top: 0; }
+  .question .basis { font: 400 13.5px/1.6 ui-sans-serif, system-ui, sans-serif; color: var(--ink-soft); margin: 0 0 20px; }
+  .fairness { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .fairness .fair-label { font: 600 13px/1.4 ui-sans-serif, system-ui, sans-serif; }
+  button {
+    font: 500 14px/1 ui-sans-serif, system-ui, sans-serif;
+    padding: 9px 15px; background: #fff; color: var(--ink);
+    border: 1px solid #c9c2b4; border-radius: var(--radius); cursor: pointer;
+  }
+  button:hover { border-color: var(--ink); }
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .note { font: 400 13px/1.6 ui-sans-serif, system-ui, sans-serif; color: var(--ink-soft); margin: 14px 0 0; }
+  .facts { list-style: none; margin: 0; padding: 0; }
+  .facts > li { padding: 14px 0; border-bottom: 1px dashed var(--rule); }
+  .facts > li:last-child { border-bottom: 0; }
+  .fact-head { display: flex; gap: 12px; align-items: baseline; }
+  .fact-mark { font: 600 12px/1 ui-sans-serif, system-ui, sans-serif; color: var(--accent); min-width: 1.6rem; }
+  .sources { font: 400 13.5px/1.6 ui-sans-serif, system-ui, sans-serif; color: var(--ink-soft); margin: 8px 0 0 2.5rem; }
+  .sources a { color: var(--ink-soft); }
+  details summary {
+    font: 500 13px/1.6 ui-sans-serif, system-ui, sans-serif;
+    cursor: pointer; color: var(--accent); margin-left: 2.5rem;
+  }
+  details[open] summary { margin-bottom: 6px; }
+  .countercase { background: var(--counter-bg); border-left: 3px solid var(--counter); padding: 26px 24px; }
+  .countercase h2 { font-size: 1.5rem; }
+  .countercase p { margin: 0 0 12px; }
+  .prompts { display: grid; gap: 14px; }
+  .prompt { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .prompt p { margin: 0; flex: 1 1 22rem; }
+  footer { border-top: 1px solid var(--rule); margin-top: 20px; padding-top: 24px; }
+  footer h3 { font: 600 12px/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 12px; }
+  footer ol { margin: 0; padding-left: 1.2rem; color: var(--ink-soft); font-size: .95rem; }
+  footer li { margin-bottom: 6px; }
+  .out { font: 500 14px/1.4 ui-sans-serif, system-ui, sans-serif; color: var(--counter); }
+</style>
+</head>
+<body>
+
+<p class="mock-banner">
+  PROTOTYPE — layout and interaction test only. Every figure below is a <strong>PLACEHOLDER</strong>.
+  Nothing on this page is a real statistic.
+  <a href="../index.html" style="color:#ffdede">Back to Perspectives</a>
+</p>
+
+<main>
+  <header>
+    <p class="kicker">Face Value · template PT-3</p>
+    <h1>A claim, its context, and one question</h1>
+    <p class="lede">
+      The page questions a claim made in public — by showing what the claim left out, and by asking a
+      question about its <em>face value</em> rather than arguing with it.
+    </p>
+  </header>
+
+  <section class="claim" aria-labelledby="claim-h">
+    <p class="kicker" id="claim-h">The claim as it was made</p>
+    <blockquote>
+      We are being left behind. A single American state now out-produces the entire United Kingdom.
+    </blockquote>
+    <p class="attrib">
+      <span class="ph">SPEAKER</span> · <span class="ph">OUTLET</span> ·
+      <span class="ph">DATE</span> · <a href="#" aria-label="Source of the original claim">original recording</a>
+    </p>
+  </section>
+
+  <section class="question" aria-labelledby="q-h">
+    <p class="kicker">The question on this page · module M-12</p>
+    <h2 id="q-h">
+      If a state out-produces a country — does everyone in that state get a slice of it?
+    </h2>
+    <p class="basis">
+      Asked by <span class="ph">CURATOR</span> · <span class="ph">DATE</span> ·
+      basis: <span class="ph">WHY THIS QUESTION</span>
+    </p>
+    <div class="fairness">
+      <span class="fair-label" id="fair-label">Was this question fair?</span>
+      <span role="group" aria-labelledby="fair-label">
+        <button type="button" data-fair="yes" aria-pressed="false">Fair</button>
+        <button type="button" data-fair="no" aria-pressed="false">Not fair</button>
+        <button type="button" data-fair="edit" aria-pressed="false">Fair, but better worded</button>
+      </span>
+      <span class="out" id="fair-out" role="status" aria-live="polite"></span>
+    </div>
+    <p class="note">
+      Integrity rule 2 — the question is itself on the page, attributed, and ratable. If the framing does
+      the persuading, the framing is scrutinised too.
+    </p>
+  </section>
+
+  <section aria-labelledby="ctx-h">
+    <p class="kicker">Context · module M-13 + M-18</p>
+    <h2 id="ctx-h">What the claim left out</h2>
+    <ul class="facts">
+      <li>
+        <div class="fact-head">
+          <span class="fact-mark" aria-hidden="true">01</span>
+          <span>Total output of the state: <span class="ph">PLACEHOLDER — £0.0tn</span>, year <span class="ph">YYYY</span>.</span>
+        </div>
+        <details>
+          <summary>Sources for fact 01</summary>
+          <p class="sources" >
+            <span class="ph">SOURCE 1 — publisher, date, link</span><br>
+            <span class="ph">SOURCE 2 — the figure the claim itself relies on</span>
+          </p>
+        </details>
+      </li>
+      <li>
+        <div class="fact-head">
+          <span class="fact-mark" aria-hidden="true">02</span>
+          <span>Population: state <span class="ph">PLACEHOLDER</span> vs UK <span class="ph">PLACEHOLDER</span>.</span>
+        </div>
+        <details>
+          <summary>Sources for fact 02</summary>
+          <p class="sources"><span class="ph">SOURCE — publisher, date, link</span></p>
+        </details>
+      </li>
+      <li>
+        <div class="fact-head">
+          <span class="fact-mark" aria-hidden="true">03</span>
+          <span>Output per person in each: <span class="ph">PLACEHOLDER</span> vs <span class="ph">PLACEHOLDER</span>.</span>
+        </div>
+        <details>
+          <summary>Sources for fact 03</summary>
+          <p class="sources"><span class="ph">SOURCE — publisher, date, link</span></p>
+        </details>
+      </li>
+      <li>
+        <div class="fact-head">
+          <span class="fact-mark" aria-hidden="true">04</span>
+          <span>How that output is shared inside the state: median income <span class="ph">PLACEHOLDER</span>, poverty rate <span class="ph">PLACEHOLDER</span>.</span>
+        </div>
+        <details>
+          <summary>Sources for fact 04</summary>
+          <p class="sources"><span class="ph">SOURCE — publisher, date, link</span></p>
+        </details>
+      </li>
+    </ul>
+  </section>
+
+  <section class="countercase" aria-labelledby="cc-h">
+    <p class="kicker">The strongest case for the claim · module M-15</p>
+    <h2 id="cc-h">Why the comparison is not simply wrong</h2>
+    <p><span class="ph">PLACEHOLDER — the strongest argument that the comparison is meaningful, stated
+      as its proponents would state it, not as a straw man.</span></p>
+    <p><span class="ph">PLACEHOLDER — the evidence that supports that argument.</span></p>
+    <p class="note">
+      Integrity rule 1 — this panel is required on every page that questions a claim, and it carries the
+      same typographic weight as the claim itself. A sceptical page without it is a leading question with
+      a chart attached.
+    </p>
+  </section>
+
+  <section aria-labelledby="cap-h">
+    <p class="kicker">Response capture · module M-8</p>
+    <h2 id="cap-h">Before you go</h2>
+    <div class="prompts">
+      <div class="prompt">
+        <p>Has your view changed?</p>
+        <span role="group" aria-label="Has your view changed">
+          <button type="button" data-change="yes">Yes</button>
+          <button type="button" data-change="no">No</button>
+        </span>
+      </div>
+      <div class="prompt">
+        <p>Was information revealed here that you had not seen before?</p>
+        <span role="group" aria-label="New information revealed">
+          <button type="button" data-change="new-yes">Yes</button>
+          <button type="button" data-change="new-no">No</button>
+        </span>
+      </div>
+      <div class="prompt">
+        <p>Do you feel misled by information you were given previously?</p>
+        <span role="group" aria-label="Feel misled">
+          <button type="button" data-change="misled">Yes — and I can say where it came from</button>
+        </span>
+      </div>
+      <p class="out" id="cap-out" role="status" aria-live="polite"></p>
+      <p class="note">
+        A named source is stored privately by default; only aggregates are ever published. "I feel misled"
+        is a feeling, not a fact — it never enters the accepted state on its own.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Integrity rules this page inherits</h3>
+    <ol>
+      <li>Any page that questions a claim shows the strongest case for it, at equal weight.</li>
+      <li>The curator's question is on the page, attributed, and ratable.</li>
+      <li>No count appears without its denominator.</li>
+      <li>Published is published — fading, drafting and commenting are not defences.</li>
+      <li>The curator is recorded: who asked, when, and on what basis.</li>
+    </ol>
+  </footer>
+</main>
+
+<script>
+  // Interaction only. No data leaves the page — this mockup has no backend by design.
+  document.querySelectorAll('.fairness button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var group = btn.closest('.fairness');
+      group.querySelectorAll('button').forEach(function (b) {
+        b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+      });
+      var labels = { yes: 'Recorded as fair.', no: 'Recorded as not fair.', edit: 'Recorded — wording noted.' };
+      document.getElementById('fair-out').textContent = labels[btn.dataset.fair];
+    });
+  });
+
+  document.querySelectorAll('[data-change]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var out = document.getElementById('cap-out');
+      if (btn.dataset.change === 'misled') {
+        out.textContent = 'Stored privately. Only aggregates are published.';
+      } else {
+        out.textContent = 'Recorded. (In the real page this feeds the persuasion statistics — never shown as a personal score.)';
+      }
+    });
+  });
+</script>
+</body>
+</html>

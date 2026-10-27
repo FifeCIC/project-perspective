@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>PB-01 · Cascade mockup — Scotland vs England drug-death recording</title>
+<style>
+  :root {
+    --ink: #14171c; --ink-soft: #5b6370; --paper: #f8f9fb; --card: #ffffff;
+    --rule: #dde1e7; --accent: #1f4b7a; --accent-bg: #eef3f9; --warn: #8a5a00;
+    --warn-bg: #fff6e0; --counter: #14532d; --counter-bg: #eff6f1;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+    font: 17px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif; }
+  .mock { background: #2b1d1d; color: #ffdede; text-align: center; padding: 10px 18px;
+    font: 600 13px/1.5 ui-sans-serif, system-ui, sans-serif; }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 40px 22px 80px; }
+  .kicker { font: 600 11px/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: .13em;
+    text-transform: uppercase; color: var(--ink-soft); margin: 0 0 10px; }
+  h1 { font-size: 2rem; line-height: 1.18; font-weight: 400; margin: 0 0 10px; }
+  h2 { font-size: 1.28rem; line-height: 1.35; font-weight: 400; margin: 0 0 12px; }
+  .lede { color: var(--ink-soft); margin: 0 0 32px; }
+  .block { background: var(--card); border: 1px solid var(--rule); padding: 24px; margin: 0 0 20px; }
+  .claim blockquote { margin: 0 0 12px; font-size: 1.45rem; line-height: 1.4; font-style: italic; }
+  .claim blockquote::before { content: "\201C"; color: var(--ink-soft); }
+  .claim blockquote::after { content: "\201D"; color: var(--ink-soft); }
+  .counter { background: var(--counter-bg); border: 1px solid #bcd6c4; border-left-width: 4px; }
+  .counter h2 { font-size: 1.45rem; }
+  .counter li { margin-bottom: 10px; }
+  .cols { display: grid; grid-template-columns: 20rem 1fr; gap: 26px; align-items: start; }
+  @media (max-width: 55rem) { .cols { grid-template-columns: 1fr; } }
+  aside .block { position: sticky; top: 16px; }
+  @media (max-width: 55rem) { aside .block { position: static; } }
+  .ph { background: var(--warn-bg); border-bottom: 1px dotted #b8870b; padding: 0 3px; }
+  .beat { background: var(--card); border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    padding: 22px 24px; margin: 0 0 16px; }
+  .beat[hidden] { display: none; }
+  .beat .beat-no { font: 600 11px/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+  .beat p { margin: 0 0 12px; }
+  .quote { border-left: 3px solid var(--rule); padding-left: 14px; color: #2a2f38; font-style: italic; }
+  .src { font: 400 13px/1.6 ui-sans-serif, system-ui, sans-serif; color: var(--ink-soft); margin: 10px 0 0; }
+  .src a { color: var(--accent); }
+  .unverified { background: var(--warn-bg); border: 1px solid #e6cf9c; padding: 12px 14px;
+    font: 400 13.5px/1.6 ui-sans-serif, system-ui, sans-serif; margin: 12px 0 0; }
+  .hinge { background: var(--accent-bg); border: 1px solid #c3d5e8; padding: 18px 20px; margin: 0 0 16px; }
+  .hinge[hidden] { display: none; }
+  .hinge .hinge-label { font: 600 13px/1.4 ui-sans-serif, system-ui, sans-serif; margin: 0 0 12px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 9px; }
+  button { font: 500 14px/1 ui-sans-serif, system-ui, sans-serif; padding: 9px 14px; background: #fff;
+    color: var(--ink); border: 1px solid #c3cad4; border-radius: 3px; cursor: pointer; }
+  button:hover { border-color: var(--ink); }
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  button[aria-pressed="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .turn { font: 400 13.5px/1.6 ui-sans-serif, system-ui, sans-serif; color: var(--counter);
+    margin: 12px 0 0; }
+  .progress { font: 500 12px/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--ink-soft); }
+  .scale { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .scale span { font: 400 13px/1.5 ui-sans-serif, system-ui, sans-serif; }
+  .report { font: 400 14px/1.7 ui-sans-serif, system-ui, sans-serif; color: var(--ink);
+    background: var(--card); border: 1px solid var(--rule); padding: 16px 18px; margin: 16px 0 0; }
+  footer { border-top: 1px solid var(--rule); margin-top: 30px; padding-top: 22px; }
+  footer h3 { font: 600 12px/1.4 ui-sans-serif, system-ui, sans-serif; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-soft); margin: 0 0 10px; }
+  footer ol, footer ul { margin: 0; padding-left: 1.2rem; color: var(--ink-soft); font-size: .95rem; }
+  .out { font: 500 14px/1.4 ui-sans-serif, system-ui, sans-serif; color: var(--counter); margin: 12px 0 0; }
+</style>
+</head>
+<body>
+
+<p class="mock">
+  PROTOTYPE — the interaction is real; the figures are not verified. Items marked
+  <strong>CLAIMED — UNVERIFIED</strong> must not be relied on.
+  <a href="../index.html" style="color:#ffdede">Back to Perspectives</a>
+</p>
+
+<div class="wrap">
+
+  <header>
+    <p class="kicker">PB-01 · Cascade · Forensic register</p>
+    <h1>Two nations count the same death differently</h1>
+    <p class="lede">
+      The claim is that Scotland's drug deaths are higher than England's. This page is not about which
+      nation is worse. It is about what changes when you can see how each number is made.
+    </p>
+  </header>
+
+  <!-- The claim -->
+  <section class="block claim">
+    <p class="kicker">The claim as it is usually made</p>
+    <blockquote>
+      Scotland's drug deaths are far higher than England's — the worst in Europe.
+    </blockquote>
+    <p class="src">As stated in political argument. The figure most often quoted is from the
+      National Records of Scotland.</p>
+  </section>
+
+  <!-- Required counter-case, full width, equal weight -->
+  <section class="block counter">
+    <p class="kicker">The strongest case for the claim · module M-15 · required</p>
+    <h2>Why the comparison is not simply unfair</h2>
+    <ul>
+      <li><strong>The ONS itself says its totals are usable across the UK.</strong> Its drug-poisoning
+        measure has complete population coverage and can be compared with the other nations' figures.</li>
+      <li><strong>The comparison is made per million people, not in raw counts.</strong> That is the correct
+        method, and it already accounts for England being far larger.</li>
+      <li><strong>If Scotland's rate really is higher, that difference is real</strong> — and a public-health
+        emergency of that size is exactly the kind of thing a nation's politics should be arguing about.</li>
+    </ul>
+    <p class="src">Integrity rule 1 — this panel is required on every page that questions a claim, and
+      carries the same typographic weight as the claim. It cannot be placed behind a hinge.</p>
+  </section>
+
+  <div class="cols">
+
+    <!-- Curator's question -->
+    <aside>
+      <section class="block">
+        <p class="kicker">The curator's question · M-12</p>
+        <h2>If two nations count the same thing differently, who chooses which number becomes the headline?</h2>
+        <p class="src">Asked by <span class="ph">CURATOR</span> · 2026-09-26 ·
+          basis: the ONS states its totals are comparable across the UK, while drug-misuse and
+          substance-specific figures are not.</p>
+        <div class="btns" role="group" aria-label="Was this question fair?">
+          <button type="button" data-fair="yes">Fair</button>
+          <button type="button" data-fair="no">Not fair</button>
+          <button type="button" data-fair="edit">Fair, better worded</button>
+        </div>
+        <p class="out" id="fair-out" role="status" aria-live="polite"></p>
+        <p class="src">Integrity rule 2 — the question is on the page, attributed, and ratable.</p>
+      </section>
+
+      <section class="block">
+        <p class="kicker">Sources · M-18</p>
+        <p class="src">
+          <strong>ONS</strong>, <em>Deaths related to drug poisoning in England and Wales: 2024
+          registrations</em>, released 17 October 2025.
+          <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/bulletins/deathsrelatedtodrugpoisoninginenglandandwales/2024registrations">Read it</a>.
+          Accessed 2026-09-26.
+        </p>
+        <p class="src"><strong>NRS</strong>, <em>Drug-related deaths in Scotland 2024</em> —
+          <span class="ph">NOT YET READ</span>. Until it is, this page makes no claim about how
+          Scotland's figures are produced.</p>
+      </section>
+    </aside>
+
+    <!-- The Cascade -->
+    <main>
+      <p class="progress" id="progress" role="status" aria-live="polite">Beat 0 of 5</p>
+
+      <!-- Opening stance -->
+      <section class="block" id="stance-a">
+        <p class="kicker">Before you see anything · M-1</p>
+        <h2>How fairly do you think drug-death statistics are used in political argument?</h2>
+        <div class="scale" role="group" aria-label="How fairly are drug-death statistics used">
+          <button type="button" data-stance-a="1">1 · very fairly</button>
+          <button type="button" data-stance-a="2">2</button>
+          <button type="button" data-stance-a="3">3 · not sure</button>
+          <button type="button" data-stance-a="4">4</button>
+          <button type="button" data-stance-a="5">5 · very unfairly</button>
+        </div>
+        <p class="out" id="stance-a-out" role="status" aria-live="polite"></p>
+      </section>
+
+      <!-- Beat 1 -->
+      <section class="beat" id="beat-1">
+        <p class="beat-no">Beat 1</p>
+        <p>Scotland's drug-death figures are routinely described as the worst in Europe, and higher than
+          England's. The comparison is usually made in rates per million people.</p>
+      </section>
+
+      <section class="hinge" id="hinge-1" hidden>
+        <p class="hinge-label">Hinge 1 — answer to continue</p>
+        <p>Before you see how each number is made: is that comparison fair?</p>
+        <div class="btns" role="group" aria-label="Is the comparison fair">
+          <button type="button" data-turn="h1-fair">Fair</button>
+          <button type="button" data-turn="h1-unfair">Not fair</button>
+          <button type="button" data-turn="h1-unsure">Not sure yet</button>
+        </div>
+        <p class="turn" id="turn-1" role="status" aria-live="polite"></p>
+      </section>
+
+      <!-- Beat 2 -->
+      <section class="beat" id="beat-2" hidden>
+        <p class="beat-no">Beat 2 · how the numbers are made</p>
+        <p class="quote">"The Office for National Statistics (ONS) does not have access to post-mortem
+          reports or toxicology results, so the accuracy of figures depends on the information provided by
+          the coroner on the death certificate."</p>
+        <p>In England and Wales, what gets recorded about a drug death is whatever the coroner writes on the
+          certificate. The ONS does not see the toxicology.</p>
+        <p class="src">ONS, section 5 and section 10 (Limitations), 2024 registrations. ✅ verified</p>
+      </section>
+
+      <section class="hinge" id="hinge-2" hidden>
+        <p class="hinge-label">Hinge 2 — answer to continue</p>
+        <p>Does knowing the two nations record deaths differently change how you read the comparison?</p>
+        <div class="btns" role="group" aria-label="Does it change how you read it">
+          <button type="button" data-turn="h2-yes">Yes</button>
+          <button type="button" data-turn="h2-no">No</button>
+          <button type="button" data-turn="h2-unsure">Not sure</button>
+        </div>
+        <p class="turn" id="turn-2" role="status" aria-live="polite"></p>
+      </section>
+
+      <!-- Beat 3 -->
+      <section class="beat" id="beat-3" hidden>
+        <p class="beat-no">Beat 3 · the missing detail</p>
+        <p>In 2024, <strong>1,192 deaths (21.4%)</strong> registered in England and Wales had no drug type
+          recorded on the coroner's certificate. In those cases the record may say only "drug overdose" or
+          "multiple drug toxicity".</p>
+        <p>The ONS is explicit about what that means: the <strong>totals</strong> are complete and reliable,
+          but the <strong>breakdowns by drug</strong> are undercounts.</p>
+        <p class="src">ONS, section 3 and section 5. ✅ verified</p>
+        <div class="unverified">
+          <strong>CLAIMED — UNVERIFIED.</strong> The argument that Scotland leaves substances unspecified
+          in only about 2% of cases comes from the pasted AI answer, not from a publisher. The NRS
+          publication has not been read. <strong>This figure must not appear on a live page yet.</strong>
+        </div>
+      </section>
+
+      <section class="hinge" id="hinge-3" hidden>
+        <p class="hinge-label">Hinge 3 — answer to continue</p>
+        <p>Which is the bigger problem?</p>
+        <div class="btns" role="group" aria-label="Which is the bigger problem">
+          <button type="button" data-turn="h3-breakdown">England's breakdown is incomplete</button>
+          <button type="button" data-turn="h3-definition">Scotland's headline uses a different definition</button>
+          <button type="button" data-turn="h3-both">Both — and the headline hides the choice</button>
+        </div>
+        <p class="turn" id="turn-3" role="status" aria-live="polite"></p>
+      </section>
+
+      <!-- Beat 4 -->
+      <section class="beat" id="beat-4" hidden>
+        <p class="beat-no">Beat 4 · what the ONS says about comparing</p>
+        <p class="quote">"Our drug-poisoning statistics can be used for comparisons across the UK, as our
+          measure offers complete population coverage. Figures for drug misuse and individual substances are
+          not comparable because of differences in data collection methods and in the death registration
+          system."</p>
+        <p>So the argument is narrower than it first appears. The <strong>totals</strong> can be compared.
+          The <strong>breakdowns</strong> cannot — and a headline usually quotes a breakdown.</p>
+        <p class="src">ONS, section 10 (Comparing with other statistics). ✅ verified</p>
+      </section>
+
+      <!-- Beat 5 -->
+      <section class="beat" id="beat-5" hidden>
+        <p class="beat-no">Beat 5 · the second reason the numbers are slippery</p>
+        <p>Only <strong>37.2%</strong> of drug-poisoning deaths registered in 2024 actually occurred in 2024.
+          The median delay between death and registration was <strong>214 days</strong> in England and
+          <strong>279 days</strong> in Wales.</p>
+        <p>A figure labelled "2024" is mostly a figure about earlier years. That is a different problem from
+          recording method — and the original argument ran the two together.</p>
+        <p class="src">ONS, section 6 and section 7. ✅ verified</p>
+        <p class="src"><strong>Recording method. Registration timing. Actual mortality.</strong> Three
+          separate things. The page does not conclude which nation is worse, because the sources do not
+          support a conclusion yet.</p>
+      </section>
+
+      <!-- Closing stance -->
+      <section class="block" id="stance-b" hidden>
+        <p class="kicker">After the page · M-1 · identical wording</p>
+        <h2>How fairly do you think drug-death statistics are used in political argument?</h2>
+        <div class="scale" role="group" aria-label="How fairly are drug-death statistics used">
+          <button type="button" data-stance-b="1">1 · very fairly</button>
+          <button type="button" data-stance-b="2">2</button>
+          <button type="button" data-stance-b="3">3 · not sure</button>
+          <button type="button" data-stance-b="4">4</button>
+          <button type="button" data-stance-b="5">5 · very unfairly</button>
+        </div>
+        <p class="out" id="stance-b-out" role="status" aria-live="polite"></p>
+        <div class="report" id="shift" hidden></div>
+        <p class="src">The opening and closing questions are worded identically, so the difference measured
+          is the page's effect and not a reworded question. Whether to show the shift to the visitor is an
+          open decision.</p>
+      </section>
+
+      <!-- Capture -->
+      <section class="block" id="capture" hidden>
+        <p class="kicker">Response capture · M-8</p>
+        <h2>Before you go</h2>
+        <p>Has your view changed?</p>
+        <div class="btns" role="group" aria-label="Has your view changed">
+          <button type="button" data-cap="changed">Yes</button>
+          <button type="button" data-cap="unchanged">No</button>
+        </div>
+        <p>Was information revealed here that you had not seen before?</p>
+        <div class="btns" role="group" aria-label="New information revealed">
+          <button type="button" data-cap="new">Yes</button>
+          <button type="button" data-cap="none">No</button>
+        </div>
+        <p>Do you feel misled by information you were given previously?</p>
+        <div class="btns" role="group" aria-label="Feel misled">
+          <button type="button" data-cap="misled">Yes — and I can say where it came from</button>
+        </div>
+        <p class="out" id="cap-out" role="status" aria-live="polite"></p>
+        <p class="src">A named source is stored privately by default; only aggregates are published.
+          "I feel misled" is a feeling, not a fact, and never enters the accepted state on its own.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <h3>Integrity rules this page inherits</h3>
+    <ol>
+      <li>Any page that questions a claim shows the strongest case for it, at equal weight.</li>
+      <li>The curator's question is on the page, attributed, and ratable.</li>
+      <li>No count appears without its denominator.</li>
+      <li>Published is published — fading, drafting and commenting are not defences.</li>
+      <li>The curator is recorded: who asked, when, and on what basis.</li>
+    </ol>
+    <h3 style="margin-top:22px">Source rules applied to this page</h3>
+    <ul>
+      <li>Every ✅ figure is a direct quote from the ONS bulletin named above.</li>
+      <li>Every ❔ figure is marked on the page as claimed and unverified, and is not stated as fact.</li>
+      <li>The pasted AI answer is treated as an exhibit, never as a source.</li>
+    </ul>
+  </footer>
+</div>
+
+<script>
+  // Mockup only. No backend, no storage, nothing leaves the page.
+  var beat = 0, totalBeats = 5;
+  var turns = {}, stance = {};
+
+  function show(el) { if (el) el.hidden = false; }
+  function progress() {
+    document.getElementById('progress').textContent = 'Beat ' + beat + ' of ' + totalBeats;
+  }
+
+  function finish() {
+    show(document.getElementById('stance-b'));
+    show(document.getElementById('capture'));
+  }
+
+  function advance(n) {
+    show(document.getElementById('beat-' + n));
+    var nextHinge = document.getElementById('hinge-' + n);
+    if (nextHinge) {
+      show(nextHinge);
+      beat = Math.max(beat, n);
+      progress();
+      return;
+    }
+    // No hinge after this beat: reveal the remaining beats, then close the page.
+    for (var i = n + 1; i <= totalBeats; i++) show(document.getElementById('beat-' + i));
+    beat = totalBeats;
+    progress();
+    finish();
+  }
+
+  var labels = {
+    'h1-fair': 'Recorded: you thought it was fair before seeing how the numbers are made.',
+    'h1-unfair': 'Recorded: you thought it was not fair before seeing how the numbers are made.',
+    'h1-unsure': 'Recorded: not sure yet.',
+    'h2-yes': 'Recorded: recording method changed how you read it.',
+    'h2-no': 'Recorded: recording method did not change how you read it.',
+    'h2-unsure': 'Recorded: still not sure.',
+    'h3-breakdown': "Recorded: England's incomplete breakdown.",
+    'h3-definition': "Recorded: Scotland's definition.",
+    'h3-both': 'Recorded: both — and that the headline hides the choice.'
+  };
+
+  document.querySelectorAll('[data-turn]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var hinge = btn.closest('.hinge');
+      hinge.querySelectorAll('[data-turn]').forEach(function (b) {
+        b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+      });
+      var n = hinge.id.replace('hinge-', '');
+      turns['h' + n] = btn.dataset.turn;
+      document.getElementById('turn-' + n).textContent = labels[btn.dataset.turn];
+      advance(Number(n) + 1);
+    });
+  });
+
+  function recordStance(which, value) {
+    var attr = 'data-stance-' + which;
+    document.querySelectorAll('[' + attr + ']').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute(attr) === value ? 'true' : 'false');
+    });
+    stance[which] = Number(value);
+    var out = document.getElementById('stance-' + which + '-out');
+    if (out) out.textContent = 'Recorded: ' + value + ' of 5.';
+    if (which === 'a') advance(1);
+    if (which === 'b' && stance.a) {
+      var box = document.getElementById('shift');
+      box.hidden = false;
+      box.innerHTML = '<strong>Your position, start \u2192 end:</strong> ' + stance.a + ' \u2192 ' +
+        stance.b + '. This is your own answer, reported back to you. It is not a score, and it is not ' +
+        'compared with anyone else\u2019s.';
+    }
+  }
+  document.querySelectorAll('[data-stance-a]').forEach(function (b) {
+    b.addEventListener('click', function () { recordStance('a', b.getAttribute('data-stance-a')); });
+  });
+  document.querySelectorAll('[data-stance-b]').forEach(function (b) {
+    b.addEventListener('click', function () { recordStance('b', b.getAttribute('data-stance-b')); });
+  });
+
+  document.querySelectorAll('[data-fair]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('[data-fair]').forEach(function (o) {
+        o.setAttribute('aria-pressed', o === b ? 'true' : 'false');
+      });
+      document.getElementById('fair-out').textContent = 'Recorded — the question\u2019s fairness is stored.';
+    });
+  });
+
+  document.querySelectorAll('[data-cap]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var out = document.getElementById('cap-out');
+      out.textContent = b.dataset.cap === 'misled'
+        ? 'Stored privately. Only aggregates are published.'
+        : 'Recorded. In the real page this informs the persuasion statistics \u2014 never shown as a personal score.';
+    });
+  });
+
+  progress();
+</script>
+</body>
+</html>
