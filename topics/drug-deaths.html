@@ -159,12 +159,18 @@
           <a href="https://analysisfunction.civilservice.gov.uk/blog/comparability-of-drug-related-death-statistics-across-the-united-kingdom/">Read it</a>.
           Accessed 2026-10-27. This is the source for which measure may be compared across the UK, and for
           the 25.1% / 1.9% / 6.6% substance-information figures.</p>
+        <p class="src"><strong>Chen, Mais &amp; Copeland</strong>, "Comparison of ONS and NPSUM data suggests
+          that opioid-related deaths in England &amp; Wales have been systematically underestimated",
+          <em>International Journal of Drug Policy</em> 145:104976, November 2025.
+          <a href="https://doi.org/10.1016/j.drugpo.2025.104976">doi</a>. Accessed 2026-10-27. Peer-reviewed,
+          CC BY. The paper's abstract gives 29% (2011) and 36% (2022); the 54.7% decade figure comes from
+          King's College London's release describing the paper.</p>
       </section>
     </aside>
 
     <!-- The Cascade -->
     <main>
-      <p class="progress" id="progress" role="status" aria-live="polite">Beat 0 of 5</p>
+      <p class="progress" id="progress" role="status" aria-live="polite">Beat 0 of 6</p>
 
       <!-- Opening stance -->
       <section class="block" id="stance-a">
@@ -359,13 +365,58 @@
         <p class="src">A named source is stored privately by default; only aggregates are published.
           "I feel misled" is a feeling, not a fact, and never enters the accepted state on its own.</p>
       </section>
+      <!-- Beat 6 -->
+      <section class="beat" id="beat-6" hidden>
+        <p class="beat-no">Beat 6 · the same error, one more time</p>
+        <p>While checking this page's sources, a second figure turned up in circulation: that opioid
+          deaths are <em>"underestimated by roughly 50–55%, according to King's College London"</em>.</p>
+        <p>The research is real and peer-reviewed. The percentage has been turned inside out.</p>
+
+        <table class="figures">
+          <caption>Chen, Mais and Copeland (2025), England and Wales, 2011–2022</caption>
+          <thead>
+            <tr><th scope="col">Statement</th><th scope="col">Arithmetic</th><th scope="col">True?</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">"Opioid deaths were 54.7% higher than recorded"</th>
+              <td>(39,232 − 25,364) ÷ <strong>25,364</strong> = 54.7%</td>
+              <td>✅ what the publisher says</td>
+            </tr>
+            <tr>
+              <th scope="row">"Opioid deaths were underestimated by 50–55%"</th>
+              <td>(39,232 − 25,364) ÷ <strong>39,232</strong> = 35.4%</td>
+              <td>❌ the same gap, divided by the other number</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Both sentences describe the same research. Only one of them is true. About
+          <strong>35%</strong> of opioid deaths went unrecorded — not 50–55%. A "50–55% underestimate"
+          would mean only half of deaths were captured; the paper's estimate is that
+          <strong>around 65% were</strong>.</p>
+
+        <p class="quote">"In 2011, 574 heroin/morphine-related deaths were identified by ONS; while the
+          estimated number was 813… reflecting a 29 % underestimate. By 2022, the underestimate had
+          extended to 36 % (1264 deaths identified by ONS; estimated number 1980…)."</p>
+        <p class="src">Abstract, verbatim. ✅ verified against the published article.</p>
+
+        <div class="verified">
+          <strong>Why this belongs on the page.</strong> This is the page's subject demonstrated a second
+          time — and this time the claim arrived <em>wearing a citation</em>, from a real university, about
+          real peer-reviewed work. A correct source does not make a correct sentence.
+        </div>
+        <p class="src">The 54.7% and the 39,232 / 25,364 totals appear in King's College London's release
+          describing the paper, not in the abstract; the 29% and 36% figures are quoted from the abstract
+          itself. The distinction is recorded in the audit trail. ✅ verified</p>
+      </section>
     </main>
   </div>
 
   <footer>
     <h3>How this page was checked</h3>
-    <p>Every figure above was traced to a publisher. The claim-by-claim record — including one claim
-      that was checked and then deliberately left off this page — is published in full:
+    <p>Every figure above was traced to a publisher. The claim-by-claim record — including one widely
+      repeated statistic that turned out to be inverted — is published in full:
       <a href="https://github.com/FifeCIC/project-perspective/blob/main/verification/drug-deaths.md">audit
       trail, re-checked 2026-10-27</a>.</p>
 
@@ -392,7 +443,7 @@
 
 <script>
   // Mockup only. No backend, no storage, nothing leaves the page.
-  var beat = 0, totalBeats = 5;
+  var beat = 0, totalBeats = 6;
   var turns = {}, stance = {};
 
   function show(el) { if (el) el.hidden = false; }

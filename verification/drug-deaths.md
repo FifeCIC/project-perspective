@@ -15,6 +15,8 @@ exhibit, never as a source.
 | 1 | ONS, *Deaths related to drug poisoning in England and Wales: 2024 registrations*, released 17 October 2025 | Read in full |
 | 2 | National Records of Scotland, *Drug-related deaths in Scotland 2024* | Read 2026-10-27 |
 | 3 | UK Analysis Function (ONS / NRS / NISRA), *Comparability of drug-related death statistics across the United Kingdom* | Read 2026-10-27 |
+| 4 | Chen, Mais & Copeland, *Comparison of ONS and NPSUM data suggests that opioid-related deaths in England & Wales have been systematically underestimated*, Int J Drug Policy 145:104976 (2025) | Abstract read in full; body text not retrieved |
+| 5 | King's College London release describing source 4 — `https://www.kcl.ac.uk/news/opioid-related-deaths-in-past-decade-55-higher-than-recorded` | Read 2026-10-27; used **only** for the 54.7% and the 39,232 / 25,364 totals |
 
 ---
 
@@ -47,13 +49,24 @@ exhibit, never as a source.
 | **Source** | Source 3, Figure 1 and its commentary. |
 | **Verdict** | The claim is supported. What does not hold is the arithmetic usually shown to support it. This is the page's actual finding, and it is a better one than "the comparison is unfair". |
 
-### 4. "Opioid deaths underestimated by roughly 50–55% (KCL / NPSUM)" — **NOT CARRIED INTO THE PAGE**
+### 4. "Opioid deaths underestimated by roughly 50–55% (KCL / NPSUM)" — **PARTIALLY VERIFIED — the claim is inverted**
 
 | | |
 |---|---|
-| **Status** | Not located in a primary source. A dedicated search is documented separately; the claim does not appear on the page and is not relied on by anything on it. |
-| **Why it stays off** | A figure that cannot be traced to a publisher is exactly what this page exists to catch. Adding it because it sounds supportive would repeat the error being examined. |
-| **Substitute that IS verified** | NRS reports that opiates or opioids were implicated in **80%** of Scotland's drug misuse deaths in 2024 (Source 2, main points). That is a different statement — involvement, not under-recording — and the page does not substitute one for the other. |
+| **Was** | Not on the page; carried in the original research note as an unverified aside. Left off because it could not be traced. |
+| **Source found** | Chen S, Mais D, Copeland CS, *Comparison of ONS and NPSUM data suggests that opioid-related deaths in England & Wales have been systematically underestimated*, International Journal of Drug Policy 145:104976, November 2025. Peer-reviewed, CC BY. `https://doi.org/10.1016/j.drugpo.2025.104976` |
+| **What the paper's abstract says** | *"In 2011, 574 heroin/morphine-related deaths were identified by ONS; while the estimated number was 813 (95 % CIs 765–866), reflecting a 29 % underestimate. By 2022, the underestimate had extended to 36 % (1264 deaths identified by ONS; estimated number 1980 [95 % CIs 1894–2074])."* |
+| **Where 54.7% comes from** | King's College London's institutional release for the paper: *"Opioid-related deaths from 2011 to 2022 are 54.7% higher than recorded… 39,232 compared to 25,364 deaths previously reported."* |
+| **The error in the claim** | "54.7% higher than recorded" divides the gap by the **recorded** figure: (39,232 − 25,364) ÷ 25,364. "Underestimated by X%" divides the gap by the **true** figure: (39,232 − 25,364) ÷ 39,232 = **35.4%**. The claim takes the first number and attaches the second framing — turning a true statement into an overstatement of roughly twenty percentage points. |
+| **Verdict** | The research is real. The sentence is wrong. Correct statements: *"the true number of opioid deaths is ~55% higher than the number recorded"*, or *"about 35% of opioid deaths went unrecorded"*. |
+| **Confidence** | High on the source and its bibliographic record. Medium on the 54.7% and the 39,232 / 25,364 totals — those were verified in KCL's release, **not** in the paper's body text, which could not be retrieved in full. The 29% and 36% figures are quoted from the abstract itself. |
+| **Now on the page** | Yes — as Beat 6, with the arithmetic shown both ways. It is the page's own subject occurring a second time, and the more instructive instance because the claim arrived attached to a real citation. |
+
+### 5. Naming note
+
+NPSUM is the **National Programme on Substance Use Mortality**, renamed from the National Programme on
+Substance Abuse Deaths (NPSAD). Both names appear in circulation; the older one is not wrong, it is
+out of date.
 
 ---
 
@@ -69,6 +82,8 @@ exhibit, never as a source.
 | Scotland's poisoning rate more than double any other UK country | 3 | 2021 |
 | 37.2% of 2024-registered deaths occurred in 2024 | 1 | Registration delay |
 | Median registration delay 214 days England, 279 days Wales | 1 | |
+| 2011: 574 recorded / 813 estimated; 2022: 1,264 recorded / 1,980 estimated | 4 | Abstract, verbatim |
+| 25,364 recorded vs 39,232 estimated, 2011–2022; the gap is 54.7% of the recorded base and 35.4% of the estimated base | 5 | Both framings shown on the page |
 
 ---
 
