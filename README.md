@@ -1,8 +1,8 @@
-# Perspectives — prototype preview
+# Project Perspective — prototype preview
 
 Static prototype of the Perspectives website, hosted temporarily on GitHub Pages.
 
-**Live URL:** https://fifecic.github.io/perspectives-site/
+**Live URL:** https://fifecic.github.io/project-perspective/
 
 ## What this is
 
