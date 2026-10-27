@@ -2,7 +2,7 @@
 
 Static prototype of the Perspectives website, hosted temporarily on GitHub Pages.
 
-**Live URL:** https://fifecic.github.io/Perspectives/
+**Live URL:** https://fifecic.github.io/perspectives-site/
 
 ## What this is
 
